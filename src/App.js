@@ -1,18 +1,20 @@
-import React, { useContext } from 'react';
+import React, { Suspense, useContext ,lazy} from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom';
 
 import './App.css';
 import Header from './header/Header';
 import Home from './pages/Home';
-import Store from './pages/Store';
-import About from './pages/About';
-import Login from './pages/Login';
-import ContactUs from './pages/ContactUs';
+
 import Footer from './footer/Footer';
 import ProductDetail from './pages/ProductDetail';
 import { ShowCartContextProvider } from './store/showCart-context';
 import { ProductContextProvider } from './store/product-context';
 import loginContext from './store/login-context';
+
+const Store = lazy(()=>import('./pages/Store'))
+const About = lazy(()=>import('./pages/About'))
+const Login = lazy(()=>import('./pages/Login'))
+const ContactUs = lazy(()=>import('./pages/ContactUs'))
 
 function App() {
   const loginCtx = useContext(loginContext);
@@ -58,7 +60,7 @@ function App() {
       <Route path='/home'>
         <Home />
       </Route>
-
+<Suspense fallback={<h1>Loading...</h1>}>
       <Switch>
         <ProductContextProvider>
           <ShowCartContextProvider>
@@ -86,7 +88,7 @@ function App() {
         {!loginCtx.isloggedIn && <Login />}
         {loginCtx.isloggedIn && <Redirect to='/home' />}
       </Route>
-
+      </Suspense>
       {/* <Route path='*'>
         <Redirect to='home'/>
       </Route> */}

@@ -1,0 +1,39 @@
+.div {
+    background-color: #808080;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.div h1 {
+    margin: 0;
+    padding: 100px 0 20px 0;
+    background-color: gray;
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.div button {
+    display: block;
+    background-color: inherit;
+    border: 2px solid #10cef4;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.play-button {
+    border-radius: 50%;
+}
+
+.tourInfo {
+    margin-bottom: 80px;
+}
+
+.section h2 {
+    font-size: 40px;
+    font-family: cursive;
+    text-align: center;
+}

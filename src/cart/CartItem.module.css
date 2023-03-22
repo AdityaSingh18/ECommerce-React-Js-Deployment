@@ -1,0 +1,32 @@
+.div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.div span {
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    flex-basis: 18%;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    padding: 10px 0 10px 0;
+}
+
+.div img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    flex-basis: 30%;
+    border: 2px solid black;
+}
+
+.div button {
+    flex-basis: 16%;
+    margin-left: 10px;
+    font-size: 20px;
+}

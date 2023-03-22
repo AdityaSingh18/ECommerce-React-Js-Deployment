@@ -1,0 +1,20 @@
+.button {
+    border: 2px solid orange;
+    border-radius: 5px;
+    color: rgb(238, 252, 90);
+    align-items: center;
+    background-color: black;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.button span {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}

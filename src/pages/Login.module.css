@@ -1,0 +1,67 @@
+.login h1 {
+  margin: 0;
+  padding: 100px 0 20px 0;
+  background-color: gray;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form {
+  margin: auto;
+  border: 2px solid gray;
+  padding: 40px;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 7px gray;
+  border: none;
+}
+
+.form label {
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form input {
+  padding: 10px;
+  margin-bottom: 1em;
+  width: 95%;
+  font-size: 18px;
+  border-radius: 5px;
+  border-color: rgb(0, 0, 0, 0.2);
+}
+
+.form div {
+  text-align: center;
+}
+
+.form button {
+  width: 100%;
+  font-size: 25px;
+  margin-top: 30px;
+  padding: 8px 30px 8px 30px;
+  border-radius: 25px;
+  border: none;
+  background-color: #ccc;
+  /* box-shadow: 0 0 10px rgb(133, 255, 58); */
+}
+
+.form button:hover {
+  background-color: #00ff99;
+}
+
+.form button:active {
+  transform: scale(0.95);
+}
+
+.form p {
+  margin: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  color: purple;
+  cursor: pointer;
+}
